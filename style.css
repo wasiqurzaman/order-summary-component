@@ -184,4 +184,9 @@ span {
   .order-summary-card {
     max-width: 34rem;
   }
+  .container {
+    background: var(--Pale-blue) url("./images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
