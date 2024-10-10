@@ -1,0 +1,187 @@
+/* 
+Font
+- Family: [Red Hat Display](https://fonts.google.com/specimen/Red+Hat+Display)
+- Weights: 500, 700, 900
+
+colors: 
+ - Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+### Neutral
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%)
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+html {
+  /* 1rem = 10px; 10px/16px = 0.625 = 62.5% */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Outfit", serif;
+  font-optical-sizing: auto;
+  color: var(--Dark-blue);
+  /* max-width: 100%; */
+}
+
+.container {
+  max-width: 100%;
+  min-height: 100vh;
+  padding: 0 2rem;
+  background: var(--Pale-blue) url("./images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  /* background-image: url("./images/pattern-background-desktop.svg"); */
+  background-size: contain;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  /* border: 1px ; */
+}
+
+.order-summary-card {
+  width: 38rem;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.hero-img-box {
+  width: 100%;
+}
+
+.hero-img {
+  display: block;
+  max-width: 100%;
+}
+
+.content-box {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 4rem 2rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+  margin-bottom: 1.6rem;
+}
+
+p {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  color: var(--Desaturated-blue);
+  line-height: 1.6;
+  padding: 0 1rem;
+}
+
+.price-box {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  padding: 2rem;
+  background-color: var(--Very-pale-blue);
+  margin-bottom: 2rem;
+  border-radius: 10px;
+}
+
+.icon-music {
+  height: 4.4rem;
+  width: 4.4rem;
+}
+
+span {
+  font-size: 1.5rem;
+}
+
+.plan-price {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.text-plan {
+  font-weight: 700;
+}
+
+.text-price {
+  color: var(--Desaturated-blue);
+}
+
+.text-change {
+  margin-left: auto;
+}
+
+.btn {
+  font-family: "Outfit", serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  color: #fff;
+  background-color: inherit;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-change {
+  color: var(--Bright-blue);
+  font-weight: 600;
+  text-decoration: underline;
+  padding: 0;
+}
+
+.btn-change:hover {
+  color: hsl(245, 64%, 61%);
+  text-decoration: none;
+}
+
+.btn-proceed {
+  padding: 1.2rem 2rem;
+  background-color: var(--Bright-blue);
+  margin-bottom: 1.4rem;
+  box-shadow: 0px 12px 15px 3px hsla(245, 75%, 52%, 0.202);
+}
+
+.btn-proceed:hover {
+  background-color: hsl(245, 64%, 61%);
+}
+
+.btn-cancel {
+  align-self: center;
+  padding: 0;
+  color: var(--Desaturated-blue);
+}
+
+.btn-cancel:hover {
+  color: var(--Dark-blue);
+}
+
+/* 28*16px = 448px */
+
+@media (max-width: 28em) {
+  html {
+    font-size: 56.25%;
+  }
+  .order-summary-card {
+    max-width: 34rem;
+  }
+}
