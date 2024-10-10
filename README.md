@@ -24,4 +24,4 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 ## Author
 
 - Frontend Mentor - [@wasiqurzaman](https://www.frontendmentor.io/profile/wasiqurzaman)
-- Twitter - [@yourusername](https://www.twitter.com/wasiqurzaman01)
+- Twitter - [@wasiqurzaman01](https://www.twitter.com/wasiqurzaman01)
